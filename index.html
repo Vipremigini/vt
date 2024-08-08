@@ -41,7 +41,7 @@
               array[i] = (((array[i] * 100) / 255) - 100) * -1
             }
             const dB = Math.min(100, -Math.round(array.reduce((x, y) => x + y / array.length)) + 200)
-            console.log(dB)
+            scribbletuber.style.bottom = `${dB}px`
           }
           speak()
         })
