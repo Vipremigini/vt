@@ -16,6 +16,7 @@
       positionSlider.addEventListener('input', () => {
         scribbletuber.style.left = `${positionSlider.value}px`
       })
+     navigator.mediaDevices.getUserMedia({ audio: true }).then(() => {alert('audio granted!')})
     </script>
   </body>
 </html>
