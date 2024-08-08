@@ -14,7 +14,7 @@
       // when you slide the input, move the image
       scribbletuber.style.left = `${positionSlider.value}px`
       positionSlider.addEventListener('input', () => {
-        scribbletuber.style.left = `${positionSlider.value}px`
+        scribbletuber.style.bottom = `${dB}px`
       })
       
       navigator.mediaDevices.getUserMedia({ audio: true })
