@@ -42,10 +42,10 @@
             }
             const dB = Math.min(100, -Math.round(array.reduce((x, y) => x + y / array.length)) + 200)
             scribbletuber.style.bottom = `${dB / 3}px`
-            if (dB > 23){
+            if (dB > 25){
               scribbletuber.src = 'scream.png'
             }
-            else if (dB > 8) {
+            else if (dB > 7) {
               scribbletuber.src = 'open.png'
             } 
             else {
