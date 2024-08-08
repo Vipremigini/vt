@@ -41,10 +41,13 @@
               array[i] = (((array[i] * 100) / 255) - 100) * -1
             }
             const dB = Math.min(100, -Math.round(array.reduce((x, y) => x + y / array.length)) + 200)
-            scribbletuber.style.bottom = `${dB}px`
-            if (dB > 10) {
+            scribbletuber.style.bottom = `${dB / 3}px`
+            if (dB > 20) {
               scribbletuber.src = 'open.png'
-            } else {
+            } else if (dB > 30){
+              scribbletuber.src = 'scream.png'
+            }
+            else {
               scribbletuber.src = 'closed.png'
             }
           }
