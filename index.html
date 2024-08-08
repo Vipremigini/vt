@@ -42,6 +42,11 @@
             }
             const dB = Math.min(100, -Math.round(array.reduce((x, y) => x + y / array.length)) + 200)
             scribbletuber.style.bottom = `${dB}px`
+            if (dB > 10) {
+              scribbletuber.src = 'open.png'
+            } else {
+              scribbletuber.src = 'closed.png'
+            }
           }
           speak()
         })
